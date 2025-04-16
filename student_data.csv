@@ -1,4 +1,4 @@
-math_score,english_score,bahasa_score,latitude,longitude,school_latitude,school_longitude,distance,accepted_school
+math_score,english_score,bahasa_score,student_latitude,student_longitude,school_latitude,school_longitude,distance,accepted_school
 57,85,59,-6.978816958015114,107.7390220176475,-6.9529526870044025,107.71367777975831,894.28,24
 99,56,76,-6.964711451352469,107.72594726790469,-6.92396133741657,107.78009223685055,488.55,21
 76,67,56,-6.913198973425584,107.78813562123024,-6.92396133741657,107.78009223685055,186.33,21
