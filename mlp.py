@@ -22,7 +22,8 @@ X = df[feature_columns]
 y = df['accepted_school']
 
 # Define custom weights
-weights = np.sqrt([0.2, 0.2, 0.2, 0.2, 0.2, 0.4])
+#weights = np.sqrt([0.1, 0.1, 0.1, 0.3, 0.3, 0.1])
+weights = np.sqrt([1, 1, 1, 1, 1, 1])
 X_scaled = X * weights
 
 # Encode labels
@@ -52,7 +53,7 @@ print("Confusion Matrix:")
 print(conf_matrix)
 
 # Predict probabilities for a new student
-new_student = np.array([[97, 91, 58, 107.76574571313512,-6.956058741464109, 443.45]])  # Example values
+new_student = np.array([[91,72,80,-6.961499698511773,107.75627091236132, 1055.45]])  # Example values
 new_student_scaled = new_student * weights
 probs = mlp.predict_proba(new_student_scaled)[0]
 

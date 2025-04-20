@@ -18,7 +18,7 @@ for output in session.get_outputs():
 # Input: one row with 4 features
 #X = np.array([[97, 91, 58, 443.45]], dtype=np.float32)
 
-new_student = np.array([[97, 91, 58, 107.76574571313512,-6.956058741464109, 443.45]])
+new_student = np.array([[56,72,98, -6.987890173907045,107.76574571313512, 443.45]])
 weights = np.sqrt([0.2, 0.2, 0.2, 0.2, 0.2, 0.4])
 new_student_scaled = np.array(new_student * weights, dtype=np.float32)
 
