@@ -17,11 +17,13 @@ class StudentService:
                 distance = student["distance_3"]
 
             temp = {
-                    "id": student["id"], "score": student["score"],
+                    "id": student["id"], "junior_id": student["junior_id"],
+                    "score": student["score"],"age": student["age"],
                     "student_lat": student["student_lat"], "student_lng": student["student_lng"],
-                    "accepted_choice_id" : student["accepted_choice_id"],
+                    "accepted_school_id" : student["accepted_school_id"],
                     "school_lat": student["school_lat"], "school_lng": student["school_lng"],
-                    "distance": distance
+            #        "distance": distance,
+                    "status": student["status"]
                     }
             result.append(temp)
         return result
